@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mainproject
+    username: postgres
+    password: "2003"
+  sql:
+    init:
+      mode: never
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+
+
+  #      spring.servlet.multipart.enabled=true
+#      spring.servlet.multipart.max-file-size=100MB
+#      spring.servlet.multipart.max-request-size=100MB
+
+
+  sms:
+    api:
+      email: habibovhayotjon2@gmail.com
+      password: jUFu9uRXqf3uqiClr0dt2r20xdlU51kWbqnaZFkn
